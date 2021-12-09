@@ -27,6 +27,10 @@ def read_users():
 
     return render_template('parks.html', parks=parks)
 
+@app.route('/songlist')
+def func():
+    dict = {"Ariana Grande":[{"7 rings":"Thank U, Next!"}, "Adore"], "Imagine Dragons":[{"Thunder":"Evolve"}, {"Demons":"Continued Silence"}]}
+    return jsonify(dict)
 
 # Add a route to a return a json response like an API
 #####################################################

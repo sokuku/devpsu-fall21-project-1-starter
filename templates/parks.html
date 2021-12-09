@@ -5,7 +5,9 @@
     </head>
     <body>
         
-        <p>Replace this with the park page logic.</p>
+        {% for item in parks %} 
+            <p>{{item.name}} National Park is located in {{item.loc}}. {{item.desc}}</p>
+        {% endfor %}
         
     </body>
 </html>
